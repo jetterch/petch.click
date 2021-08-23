@@ -1,0 +1,85 @@
+<html>
+    <title>petch.click</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
+<link rel="icon" href="p.PNG" type="image/x-icon"/>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<center>
+<!-- <a id="b1" onclick="getValue()"> -->
+   <body  id="b1" onclick="getValue()">
+   <p id="sound"></p>
+
+   <br>
+   
+
+    <table >
+        <tr>
+            <td><div class="b">petch.click</p></div></td>
+        </tr>
+        <tr>
+            <td><h1><center><div class="a"><p id="num"></p></div></center></h1></td>
+        </tr>
+    </table>
+</h1>  
+
+
+
+    <p id="num1"></p>
+   
+      <script>
+         var i=0;
+         //initially i is 0. When button clicked, function increments 'i' value.
+         function getValue(){
+            document.getElementById("num").innerHTML=j;
+             
+            i++;
+            tol=i%2;
+            if(tol==0){
+                // document.getElementById("num1").innerHTML='<img src="p2.jpg" width=20%>';
+                document.body.style.background = "#f3f3f3 url('p1.jpg') no-repeat center top";
+                document.getElementById("sound").innerHTML='<audio src="die.mp3" autoplay></audio>'
+                
+            }else{
+                // document.getElementById("num1").innerHTML='<img src="p1.jpg" width=20%>';
+                document.body.style.background = "#f3f3f3 url('p2.jpg') no-repeat center top ";
+                document.getElementById("sound").innerHTML='<audio src="die.mp3" autoplay></audio>'
+            }
+
+            var j=i;
+            document.getElementById("num").innerHTML=j;
+         }
+      </script>
+   </body>
+        </a>
+</center>
+<style>
+    body {
+  background-image: url('p1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: white;        
+}
+div.a{
+    font-size: 250%;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+div.b{
+    font-size: 350%;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+}
+
+</style>
+
+</html>
+
+
